@@ -1,0 +1,86 @@
+languages:
+  en:
+    name: "English"
+    is_source: true
+    enabled: true
+    tts_engine: "kokoro"
+    tts_voice: "en_us_heart"
+    tts_voice_piper: "en_US-lessac-high"
+    caption_font: "Montserrat"
+    peak_hours:
+      primary:
+        timezone: "America/New_York"
+        hours: [11, 12, 17, 18, 19, 20, 21]
+    platform_accounts:
+      youtube: ""
+      tiktok: ""
+      instagram: ""
+
+  es:
+    name: "Spanish"
+    is_source: false
+    enabled: true
+    tts_engine: "piper"
+    tts_voice: "es_ES-sharvard-medium"
+    tts_voice_alt: "es_MX-claude-high"
+    caption_font: "Noto Sans"
+    peak_hours:
+      primary:
+        timezone: "Europe/Madrid"
+        hours: [13, 14, 18, 19, 20, 21]
+      secondary:
+        timezone: "America/Mexico_City"
+        hours: [12, 13, 19, 20, 21, 22]
+    platform_accounts:
+      youtube: ""
+      tiktok: ""
+      instagram: ""
+
+  pt:
+    name: "Portuguese"
+    is_source: false
+    enabled: true
+    tts_engine: "piper"
+    tts_voice: "pt_BR-faber-medium"
+    caption_font: "Noto Sans"
+    peak_hours:
+      primary:
+        timezone: "America/Sao_Paulo"
+        hours: [12, 13, 18, 19, 20, 21]
+    platform_accounts:
+      youtube: ""
+      tiktok: ""
+      instagram: ""
+
+  fr:
+    name: "French"
+    is_source: false
+    enabled: true
+    tts_engine: "kokoro"
+    tts_voice: "fr_fr_siwis"
+    tts_voice_piper: "fr_FR-siwis-medium"
+    caption_font: "Noto Sans"
+    peak_hours:
+      primary:
+        timezone: "Europe/Paris"
+        hours: [12, 13, 17, 18, 19, 20, 21]
+    platform_accounts:
+      youtube: ""
+      tiktok: ""
+      instagram: ""
+
+  de:
+    name: "German"
+    is_source: false
+    enabled: true
+    tts_engine: "piper"
+    tts_voice: "de_DE-thorsten-high"
+    caption_font: "Noto Sans"
+    peak_hours:
+      primary:
+        timezone: "Europe/Berlin"
+        hours: [12, 13, 17, 18, 19, 20]
+    platform_accounts:
+      youtube: ""
+      tiktok: ""
+      instagram: ""
