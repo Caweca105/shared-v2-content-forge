@@ -1,0 +1,32 @@
+# Oh-My-ClaudeCode
+.omc/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Local config overrides
+config/local.yaml
+config/*.local.yaml
