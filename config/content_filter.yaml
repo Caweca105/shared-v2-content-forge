@@ -1,0 +1,45 @@
+# Phase 4 §4e — content filter for source adapters.
+#
+# Schema:
+#   reddit.keyword_blocklist   — case-insensitive substring match on title+body
+#   reddit.blocked_subreddits  — auto-reject regardless of Source config
+#   reddit.blocked_flair_regex — extra safety net on Source.config.blocked_flairs
+#
+# Salvaged from _legacy/shared/config/content_filter.yaml + Phase 4 plan.
+# Operator should review/edit before committing additional terms.
+
+reddit:
+  keyword_blocklist:
+    # Self-harm / suicide
+    - "suicide"
+    - "self-harm"
+    - "self harm"
+    - "kill myself"
+    # Violence (concrete threats / events)
+    - "school shooting"
+    - "mass shooting"
+    - "bomb threat"
+    # Exploitation
+    - "child abuse"
+    - "child exploitation"
+    - "csam"
+    # Explicit sexual
+    - "explicit sexual"
+    # Hate
+    - "racial slur"
+    - "hate crime"
+
+  blocked_subreddits:
+    - "gonewild"
+    - "nsfw"
+    - "porn"
+    - "sex"
+    - "drugs"
+    - "gore"
+    - "watchpeopledie"
+    - "darknet"
+    - "shoplifting"
+
+  blocked_flair_regex:
+    - "(?i)nsfw"
+    - "(?i)trigger\\s*warning"
